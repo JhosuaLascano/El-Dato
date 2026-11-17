@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Recursos usados desde Dart por nombre: evita que el reductor de recursos los borre -->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/ic_stat_owl,@drawable/ic_notif_large,@mipmap/ic_launcher,@mipmap/ic_launcher_foreground" />
