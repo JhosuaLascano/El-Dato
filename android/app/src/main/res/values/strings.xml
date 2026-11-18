@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="widget_large_name">El Dato · Saldo y pendientes</string>
+    <string name="widget_large_desc">Tu saldo, agregar gasto y tus próximos pendientes.</string>
+    <string name="widget_small_name">El Dato · Rápido</string>
+    <string name="widget_small_desc">Saldo, pendientes y botón de gasto.</string>
+</resources>

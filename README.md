@@ -17,6 +17,7 @@
 - **Historial y búsqueda** — todo queda guardado por día. Filtra por fechas, módulo o tipo, y busca *"¿qué día gasté en esto?"*.
 - **Comparaciones** — semana, mes y últimos 6 meses, con gráficos y los gastos más grandes.
 - **Recordatorios** — pagos, tareas y compras con notificaciones reales (doradas en Android), que pueden repetirse diario, semanal o mensual.
+- **Widget** — en la pantalla de inicio del iPhone o Android: tu saldo, el botón "Agregar gasto" y tus próximos pendientes.
 - **Respaldo** — exporta e importa toda tu información en un archivo; tus datos se conservan al actualizar la app.
 - Interfaz oscura en negro y oro, con animaciones fluidas y optimizada para ir rápido.
 
@@ -55,9 +56,9 @@ La versión para iPhone se compila sola en GitHub Actions (pestaña **Actions �
 
 ## Descargar
 
-**Versión 1.1.0**
+**Versión 1.2.0**
 
-- **Android:** [ElDato-v1.1.0.apk](https://github.com/JhosuaLascano/El-Dato/releases/download/v1.1.0/ElDato-v1.1.0.apk)
-- **iPhone:** [ElDato-v1.1.0.ipa](https://github.com/JhosuaLascano/El-Dato/releases/download/v1.1.0/ElDato-v1.1.0.ipa) (se instala con AltStore)
+- **Android:** [ElDato-v1.2.0.apk](https://github.com/JhosuaLascano/El-Dato/releases/download/v1.2.0/ElDato-v1.2.0.apk)
+- **iPhone:** [ElDato-v1.2.0.ipa](https://github.com/JhosuaLascano/El-Dato/releases/download/v1.2.0/ElDato-v1.2.0.ipa) (se instala con AltStore)
 
 Todas las versiones: [Releases](https://github.com/JhosuaLascano/El-Dato/releases)

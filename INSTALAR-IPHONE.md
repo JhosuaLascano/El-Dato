@@ -10,7 +10,7 @@ Necesitas: tu PC con Windows, tu iPhone, el cable USB y un Apple ID (el mismo de
 2. A la izquierda elige **"iOS (.ipa para AltStore)"** → botón **Run workflow** → **Run workflow**.
 3. Espera unos 10–15 minutos hasta que aparezca el check verde.
 4. Abre esa ejecución, baja hasta **Artifacts** y descarga **ElDato-iOS** (es un .zip).
-5. Descomprímelo: adentro está `ElDato-v1.1.0.ipa`.
+5. Descomprímelo: adentro está `ElDato-v1.2.0.ipa`.
 
 > Cada vez que cambiemos la app y se suba a GitHub, se compila sola; solo repites los pasos 3–5.
 
@@ -32,7 +32,7 @@ Necesitas: tu PC con Windows, tu iPhone, el cable USB y un Apple ID (el mismo de
 
 ## Paso 4 · Instalar El Dato
 
-1. Pasa `ElDato-v1.1.0.ipa` al iPhone: guárdalo en **iCloud Drive** (desde iCloud para Windows o icloud.com) o envíatelo por correo/WhatsApp y toca **"Guardar en Archivos"**.
+1. Pasa `ElDato-v1.2.0.ipa` al iPhone: guárdalo en **iCloud Drive** (desde iCloud para Windows o icloud.com) o envíatelo por correo/WhatsApp y toca **"Guardar en Archivos"**.
 2. Abre **AltStore** en el iPhone → pestaña **My Apps** → botón **+** arriba a la izquierda → elige el `.ipa`.
 3. Listo: aparece **El Dato** con el búho en tu pantalla de inicio.
 
@@ -52,3 +52,12 @@ Necesitas: tu PC con Windows, tu iPhone, el cable USB y un Apple ID (el mismo de
 - Las notificaciones en iPhone usan el ícono del búho; Apple no permite cambiar su color como en Android.
 - Para actualizar la app, instala el nuevo `.ipa` desde AltStore igual que la primera vez: **se conservan los datos** (usa siempre el mismo Apple ID).
 - Con Apple ID gratis puedes tener máximo 3 apps de este tipo instaladas (AltStore cuenta como una).
+
+## Agregar el widget
+
+1. En la pantalla de inicio, mantén presionado un espacio vacío hasta que las apps se muevan.
+2. Toca **+** (arriba a la izquierda) → busca **El Dato**.
+3. Elige el tamaño: **pequeño** (saldo + botón), **mediano** o **grande** (saldo, "Agregar gasto" y tus pendientes) → **Agregar widget**.
+4. Abre El Dato una vez para que el widget cargue tus datos.
+
+Al tocar **Agregar gasto** se abre directo la pantalla para anotar el gasto; al tocar un pendiente se abre la pestaña de recordatorios.

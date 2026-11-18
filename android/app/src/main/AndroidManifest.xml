@@ -19,6 +19,7 @@
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="flutter_deeplinking_enabled" android:value="false" />
             <meta-data
               android:name="io.flutter.embedding.android.NormalTheme"
               android:resource="@style/NormalTheme"
@@ -38,6 +39,20 @@
                 <action android:name="android.intent.action.QUICKBOOT_POWERON" />
                 <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
             </intent-filter>
+        </receiver>
+
+        <!-- Widgets de la pantalla de inicio -->
+        <receiver android:name=".ElDatoWidgetLarge" android:exported="false" android:label="@string/widget_large_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_large_info" />
+        </receiver>
+        <receiver android:name=".ElDatoWidgetSmall" android:exported="false" android:label="@string/widget_small_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_small_info" />
         </receiver>
 
         <meta-data
