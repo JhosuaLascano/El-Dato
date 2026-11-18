@@ -11,14 +11,14 @@
 
 **El Dato** es una app para llevar el control de tu dinero día a día, rápida y sin complicaciones:
 
-- 💰 **Billetera continua** — tu saldo baja con cada gasto y sube con cada ingreso o pago que recibes.
-- 🧩 **Módulos de gasto** — Comida, Transporte, Ocio, Educación… y puedes crear, editar, reordenar o eliminar los tuyos. Cada gasto lleva descripción y monto.
-- 🐷 **Ahorro con chanchito** — una pestaña con un chanchito dorado que se va llenando hacia tu meta (por ejemplo "Laptop — $800"). Guardar o retirar en un toque; lo ahorrado no cuenta como gasto.
-- 📅 **Historial y búsqueda** — todo queda guardado por día. Filtra por fechas, módulo o tipo, y busca *"¿qué día gasté en esto?"*.
-- 📊 **Comparaciones** — semana, mes y últimos 6 meses, con gráficos y los gastos más grandes.
-- 🔔 **Recordatorios** — pagos, tareas y compras con notificaciones reales (doradas en Android), que pueden repetirse diario, semanal o mensual.
-- 💾 **Respaldo** — exporta e importa toda tu información en un archivo; tus datos se conservan al actualizar la app.
-- ✨ Interfaz oscura en negro y oro, con animaciones fluidas y optimizada para ir rápido.
+- **Billetera continua** — tu saldo baja con cada gasto y sube con cada ingreso o pago que recibes.
+- **Módulos de gasto** — Comida, Transporte, Ocio, Educación… y puedes crear, editar, reordenar o eliminar los tuyos. Cada gasto lleva descripción y monto.
+- **Ahorro con chanchito** — una pestaña con un chanchito dorado que se va llenando hacia tu meta (por ejemplo "Laptop — $800"). Guardar o retirar en un toque; lo ahorrado no cuenta como gasto.
+- **Historial y búsqueda** — todo queda guardado por día. Filtra por fechas, módulo o tipo, y busca *"¿qué día gasté en esto?"*.
+- **Comparaciones** — semana, mes y últimos 6 meses, con gráficos y los gastos más grandes.
+- **Recordatorios** — pagos, tareas y compras con notificaciones reales (doradas en Android), que pueden repetirse diario, semanal o mensual.
+- **Respaldo** — exporta e importa toda tu información en un archivo; tus datos se conservan al actualizar la app.
+- Interfaz oscura en negro y oro, con animaciones fluidas y optimizada para ir rápido.
 
 ## ¿En qué está hecha?
 
@@ -53,11 +53,11 @@ La versión para iPhone se compila sola en GitHub Actions (pestaña **Actions �
 
 ---
 
-## 📲 Descargar
+## Descargar
 
 **Versión 1.1.0**
 
-- 🤖 **Android:** [ElDato-v1.1.0.apk](https://github.com/JhosuaLascano/El-Dato/releases/download/v1.1.0/ElDato-v1.1.0.apk)
-- 🍎 **iPhone:** [ElDato-v1.1.0.ipa](https://github.com/JhosuaLascano/El-Dato/releases/download/v1.1.0/ElDato-v1.1.0.ipa) (se instala con AltStore)
+- **Android:** [ElDato-v1.1.0.apk](https://github.com/JhosuaLascano/El-Dato/releases/download/v1.1.0/ElDato-v1.1.0.apk)
+- **iPhone:** [ElDato-v1.1.0.ipa](https://github.com/JhosuaLascano/El-Dato/releases/download/v1.1.0/ElDato-v1.1.0.ipa) (se instala con AltStore)
 
 Todas las versiones: [Releases](https://github.com/JhosuaLascano/El-Dato/releases)

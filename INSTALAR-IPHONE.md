@@ -8,7 +8,7 @@ Necesitas: tu PC con Windows, tu iPhone, el cable USB y un Apple ID (el mismo de
 
 1. Entra a tu repositorio **el-dato** en github.com → pestaña **Actions**.
 2. A la izquierda elige **"iOS (.ipa para AltStore)"** → botón **Run workflow** → **Run workflow**.
-3. Espera unos 10–15 minutos hasta que aparezca el check verde ✅.
+3. Espera unos 10–15 minutos hasta que aparezca el check verde.
 4. Abre esa ejecución, baja hasta **Artifacts** y descarga **ElDato-iOS** (es un .zip).
 5. Descomprímelo: adentro está `ElDato-v1.1.0.ipa`.
 
@@ -34,7 +34,7 @@ Necesitas: tu PC con Windows, tu iPhone, el cable USB y un Apple ID (el mismo de
 
 1. Pasa `ElDato-v1.1.0.ipa` al iPhone: guárdalo en **iCloud Drive** (desde iCloud para Windows o icloud.com) o envíatelo por correo/WhatsApp y toca **"Guardar en Archivos"**.
 2. Abre **AltStore** en el iPhone → pestaña **My Apps** → botón **+** arriba a la izquierda → elige el `.ipa`.
-3. Listo: aparece **El Dato** con el búho en tu pantalla de inicio. 🦉
+3. Listo: aparece **El Dato** con el búho en tu pantalla de inicio.
 
 ## Cada 7 días: renovar
 
