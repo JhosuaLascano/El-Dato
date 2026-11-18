@@ -101,7 +101,7 @@ class SettingsScreen extends StatelessWidget {
             },
           ),
           const SizedBox(height: 24),
-          const Center(child: Text('El Dato · v1.1.0 · por LA DATA', style: TextStyle(color: AppColors.muted, fontSize: 12))),
+          const Center(child: Text('El Dato · v1.2.0 · por LA DATA', style: TextStyle(color: AppColors.muted, fontSize: 12))),
         ],
       ),
     );

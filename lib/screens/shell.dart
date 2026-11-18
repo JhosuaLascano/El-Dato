@@ -9,6 +9,7 @@ import 'home.dart';
 import 'reminders.dart';
 import 'savings.dart';
 import 'stats.dart';
+import '../services/widget_sync.dart';
 
 class Shell extends StatefulWidget {
   const Shell({super.key});
@@ -17,9 +18,46 @@ class Shell extends StatefulWidget {
   State<Shell> createState() => _ShellState();
 }
 
-class _ShellState extends State<Shell> {
+class _ShellState extends State<Shell> with WidgetsBindingObserver {
   int _index = 0;
   final _built = <int>{0};
+
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    WidgetSync.action.addListener(_onWidgetAction);
+    WidgetsBinding.instance.addPostFrameCallback((_) => _onWidgetAction());
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    WidgetSync.action.removeListener(_onWidgetAction);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.resumed) WidgetSync.takePending();
+  }
+
+  /// Acciones tocadas en el widget de la pantalla de inicio.
+  void _onWidgetAction() {
+    final a = WidgetSync.action.value;
+    if (a == null || !mounted) return;
+    WidgetSync.action.value = null;
+    final nav = Navigator.of(context);
+    nav.popUntil((r) => r.isFirst);
+    if (a == 'add') {
+      if (_index != 0) go(0);
+      nav.push(smoothRoute(const AddTxnScreen()));
+    } else if (a == 'reminders') {
+      go(4);
+    } else {
+      go(0);
+    }
+  }
 
   void go(int i) {
     if (i == _index) return;

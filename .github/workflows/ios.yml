@@ -26,6 +26,15 @@ jobs:
       - name: Compilar (sin firmar)
         run: flutter build ios --release --no-codesign
 
+      - name: Firmar ad-hoc con App Group (AltStore vuelve a firmar con tu Apple ID)
+        run: |
+          APP=build/ios/iphoneos/Runner.app
+          for f in "$APP"/Frameworks/*; do codesign -f -s - "$f"; done
+          codesign -f -s - --entitlements ios/ElDatoWidget/ElDatoWidget.entitlements "$APP/PlugIns/ElDatoWidgetExtension.appex"
+          codesign -f -s - --entitlements ios/Runner/Runner.entitlements "$APP"
+          codesign -d --entitlements - "$APP"
+          ls "$APP/PlugIns"
+
       - name: Empaquetar ElDato.ipa
         run: |
           VERSION=$(grep '^version:' pubspec.yaml | sed 's/version: //; s/+.*//')

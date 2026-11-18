@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -9,6 +11,7 @@ import 'data/app_state.dart';
 import 'data/db.dart';
 import 'screens/shell.dart';
 import 'services/notifications.dart';
+import 'services/widget_sync.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -32,6 +35,8 @@ Future<void> main() async {
     final state = AppState(await dbFuture);
     await state.load();
     runApp(ElDatoApp(state: state));
+    // El widget nunca debe impedir que la app abra.
+    unawaited(WidgetSync.init(state).catchError((Object e) => debugPrint('Widget: $e')));
   } catch (e) {
     // Nunca dejar una pantalla negra: mostrar el error.
     runApp(MaterialApp(
